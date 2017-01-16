@@ -1,0 +1,3 @@
+$(function() {
+	$('.car-car').CarCar();
+});
