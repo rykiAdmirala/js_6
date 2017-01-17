@@ -1,0 +1,41 @@
+.cc-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+.cc-hider {
+	width: 100%;
+	margin: 0 auto;
+    overflow: hidden;
+}
+.cc-carousel {
+	position: relative;
+    display: block;
+    list-style: none;
+    font-size: 0;	
+    transition: transform .2s ease-in-out;
+    transform: translate3d(0, 0, 0);
+}
+.cc-element {
+    display: inline-block;
+    vertical-align: top;
+    font-size: initial;
+    text-align: center;
+}
+.cc-element img {
+    max-width: 100%;
+}
+.cc-control {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.cc-control.left {
+    left: -90px;
+}
+.cc-control.right {
+    right: -90px;
+}
