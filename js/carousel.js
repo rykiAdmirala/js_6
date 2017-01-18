@@ -3,7 +3,7 @@
   $.fn.CarCar = function(options) {
 
     var defaults = {
-      slideToShow : 3,
+      slideToShow : 4,
       slideWidth : 400,
       slideMargin : 15,
       slideToMove : 2
@@ -44,7 +44,7 @@
     var $controlLeft = $('<div class="cc-control left">&#8678;</div>').appendTo($wrapper);
     var $controlRight = $('<div class="cc-control right">&#8680;</div>').appendTo($wrapper);;
 
-    // Calculating offset for one step of sliding
+    // Calculating distance for one step of sliding
     var moveDistance = (sets.slideWidth + sets.slideMargin) * sets.slideToMove;
 
     $controlLeft.on('click', moveToRight);

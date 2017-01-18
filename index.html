@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
+	<script src="js/template.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/script.js"></script>
 </head>
@@ -27,6 +29,7 @@
 			<li><img src="img/slide6.jpg" alt=""></li>
 			<li><img src="img/slide7.jpg" alt=""></li>
 			<li><img src="img/slide8.jpg" alt=""></li>
+			<li><img src="img/slide9.jpg" alt=""></li>
 		</ul>
 	</section>
 
@@ -40,6 +43,7 @@
 			<li><img src="img/slide6.jpg" alt=""></li>
 			<li><img src="img/slide7.jpg" alt=""></li>
 			<li><img src="img/slide8.jpg" alt=""></li>
+			<li><img src="img/slide9.jpg" alt=""></li>
 		</ul>
 	</section>
 
@@ -53,8 +57,38 @@
 			<li><img src="img/slide6.jpg" alt=""></li>
 			<li><img src="img/slide7.jpg" alt=""></li>
 			<li><img src="img/slide8.jpg" alt=""></li>
+			<li><img src="img/slide9.jpg" alt=""></li>
 		</ul>
 	</section>
+
+	<hr>
+	
+	<h2>
+		And pretty or not, but templating!
+	</h2>
+
+	<script type="text/template" id="about">
+		
+		<div class="profile-wrap">
+
+			<% for (var i = 0; i < data.length; i++) { %>
+				<div class="profile-block">
+
+					<div class="profile-block-headline">
+						<%= data[i].headline %>
+					</div>
+
+					<div class="profile-block-text">
+						<%= data[i].text %>
+					</div>
+
+				</div>
+			<% } %>
+
+		</div>
+
+	</script>
+
 
 </div>
 </body>
